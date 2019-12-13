@@ -1,1 +1,23 @@
 // Mixins Here
+.flexStart(){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bordered(){
+    border: 1px solid @header-font-color;
+}
+.btnMixin(@bg-colour, @width, @font-colour){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: @bg-colour;
+    margin: 0 0px 20px;
+    cursor: pointer;
+    width: @width;
+    height: 35px;
+    font-size: 2rem;
+    border-radius: 4px;
+    color:@font-colour;
+}

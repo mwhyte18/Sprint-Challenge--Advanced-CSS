@@ -1,1 +1,42 @@
 // Navigation code here
+nav{
+    .flexStart();
+    background-color: #f4f4f4;
+    margin: 0 0 0 1%;
+    height: 12vh;
+    div{
+        width: 60%;
+    }
+    .navTitle{
+        margin: 0 0 1% 24%;
+        padding: 0 0 0 10%;
+    }
+    .navBar{
+        margin: 0 0 0 24%;
+        padding: 0% 0 0 7%;
+
+    }
+    a{
+        margin: 0 1.2%;
+        text-decoration: none;
+        color: @header-font-color;
+    }
+    @media @phone{
+        margin: 0;
+        padding-right: 3%;
+        height: 10vh; 
+        div{
+            width: 90%;
+        }
+        .navTitle{
+            margin: 0 0 0 15%;
+        }
+        .navBar{
+            margin: 0;
+            padding: 2% 0 0 7%;
+        }
+        a{
+            margin: 0 3%;
+        }
+    }
+}
